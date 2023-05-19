@@ -1,0 +1,238 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+:root {
+    --cor01: #FED001;
+    --cor02: #071D2E;
+    --cor03: #FAFAFA;
+    --cor04: #4D4D4D;
+    --cor05: #EEF3F5;
+}
+
+body, html {
+    background-color: #ededed;
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--cor02);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 120px;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor03);
+    border-bottom: 2px solid #fff;
+    color: var(--cor03);
+    z-index: 1;
+    position: relative;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    padding: 10px;
+    font-weight: 600;
+}
+    
+a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 18px;
+    background-color: var(--cor01);
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+
+a:hover {
+    color: var(--cor02);
+    transform: scale(1.1);
+    border-bottom: none;
+}
+
+a:hover::before {
+    width: 100%;
+}
+
+.sub-header {
+    display: flex;
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFF38 100%);
+    height: 500px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 200px;
+    width: 50%;
+    gap: 3rem;
+}
+
+.text h1 {
+    font-size: 48px;
+    width: 400px;
+    color: var(--cor02);
+    line-height: 1.5;
+}
+
+.text button, #more {
+    width: 200px;
+    padding: 10px 0px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--cor01);
+    transition: all .4s ease-in-out;
+}
+
+.text button:hover, #more:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 3px #000;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+#content-cursos {
+    display: flex;
+    flex-direction: column;
+}
+
+.title h1 {
+    text-align: center;
+    padding: 80px 0px 40px;
+    font-size: 2.5em;
+}
+
+.cursos {
+    display: flex;
+    gap: 6rem;
+    padding: 50px 20px;
+}
+
+#cursos {
+    background-color: var(--cor03);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#cursos img {
+    width: 100%;
+    height: 200px;
+}
+
+#cursos h3 {
+    text-align: center;
+    font-size: 2rem;
+    word-spacing: 10px;
+}
+
+#cursos p {
+    font-family: 'Nunito';
+    font-weight: 500;
+    padding: 10px;
+    font-size: 20px;
+    word-spacing: 5px;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.more #more {
+    padding: 20px;
+}
+
+#our-scholl {
+    background-color: #003464;
+    display: flex;
+    margin: 100px 0px;
+}
+
+.aluna {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 40px;
+    line-height: 1.8;
+    width: 50%;
+}
+
+.about h1 {
+    font-size: 3rem;
+    color: var(--cor01);
+    letter-spacing: 1.5px;
+    word-spacing: 8px;
+}
+
+.about p {
+    font-family: 'Nunito';
+    color: #fafafa;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+#contato h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    padding-bottom: 60px;
+}
+
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    margin-bottom: 110px;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 10px 20px;
+}
+
+.cont a {
+    color: #000;
+    text-decoration: none;
+}
+
+.cont a:hover {
+    text-decoration: underline;
+}
